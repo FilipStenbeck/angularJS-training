@@ -1,0 +1,19 @@
+<div class="hero-unit">
+    <h1>'Allo, 'Allo!</h1>
+    <p>We have these great artist for you!</p>
+    
+    <form  class="form-inline">
+          <fieldset>
+            <label> <strong>Filter on</strong></label>
+            <input autofocus="autofocus" ng-model="searchText" type="text" class="form-fields">
+        </fieldset>
+    </form>
+    
+    <table class="table table-striped">
+        <tr ng-repeat="artist in artists | filter:searchText">
+            <td><a href ="{{artist.url}}" target="top"> {{artist.name}}</a></td>
+        </tr>
+    </table>  
+    
+  <h3>Enjoy Listning!</h3>
+</div>
