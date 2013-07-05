@@ -5,7 +5,7 @@ Various labs and demos used in an AngularJS training course.
 
 Demos :
 <ul>
-	<li><a href="https://github.com/FilipStenbeck/angularJS-training/tree/master/demo-first-angular-app">Walkthrough of the Yeoman Angular generated app</li>
+	<li><a href="https://github.com/FilipStenbeck/angularJS-training/tree/master/demo-first-angular-app">Walkthrough of a Yeoman generated Angular app</li>
 	<li><a href="https://github.com/FilipStenbeck/angularJS-training/tree/master/demo-hidden-link-directive">Using a directive to set href and fade in a link</li>
 </ul>
 
