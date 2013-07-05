@@ -22,4 +22,5 @@ Labs :
 <ul>
 	<li><a href="https://github.com/FilipStenbeck/angularJS-training/tree/master/lab-signup-form">Dealing with HTML forms</li>
 	<li><a href="https://github.com/FilipStenbeck/angularJS-training/tree/master/lab-music-lover-directive">Writing Directives</li>
+	<li><a href="https://github.com/FilipStenbeck/angularJS-training/tree/master/lab-artist-search-service">Create and use a Service</li>
 </ul>
