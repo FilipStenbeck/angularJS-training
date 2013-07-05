@@ -12,6 +12,7 @@
     <table class="table table-striped">
         <tr ng-repeat="artist in artists | filter:searchText">
             <td><a href ="{{artist.url}}" target="top"> {{artist.name}}</a></td>
+            <td><img src='{{artist.image[2]["#text"]}}'</img></td>
         </tr>
     </table>  
     
