@@ -1,9 +1,5 @@
 angular.module('formLab').controller('SignupCtrl', function ($scope) {
     
-     //Setup the url for the hidden-link tag
-    $scope.text = 'Now click here to view some awesome stuff!!';
-    $scope.href = '#/awesome';
-
     //Declare a function for handling registration
     var handleUserRegistration = function () {
         //Show confirmation
@@ -25,7 +21,6 @@ angular.module('formLab').controller('SignupCtrl', function ($scope) {
    
     //Register Events    
     $scope.formSubmited = function () {
-         $('a').trigger('showLink'); 
         handleUserRegistration();
     };
     

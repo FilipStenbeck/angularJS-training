@@ -1,6 +1,6 @@
 angular.module('formLab').controller('MainCtrl', function ($scope) {
     
-	 //Setup the url
+	 //Setup the url for the hidden-link tag
     $scope.text = 'Back to registration!';
     $scope.href = '#/';
 
@@ -11,7 +11,11 @@ angular.module('formLab').controller('MainCtrl', function ($scope) {
     ];
 
      //Register event handler
-    $scope.showBackLink = function() {
-    	$('a').trigger('showLink'); 
+    $scope.handleHiddenLinks = function(show) {
+        if (show) {
+            $('a').trigger('showLink'); 
+        } else {
+            $('a').trigger('hideLink'); 
+        }
     }
 });
