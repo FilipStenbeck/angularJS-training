@@ -16,19 +16,19 @@
                 - Show a link to the awesome content after user has signed up
         --> 
 
-        <form class="form-horizontal well">
+        <form ng-submit="register()" class="form-horizontal well">
             <fieldset>
             <legend>User registration</legend>
                 <div class="control-group">
                     <label class="control-label" for="name">Username : </label>
                     <div class="controls">
-                        <input id="name" placeholder="Type your name" required autofocus>
+                        <input id="name" ng-model="user.name" placeholder="Type your name" required autofocus>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="name">Gender : </label>
                     <div class="controls">
-                        <select >
+                        <select ng-model="user.gender">
                         <option>Male</option>
                         <option>Female</option>
                         </select>
@@ -38,7 +38,7 @@
             <div class="control-group">
                 <label class="control-label" for="name">Music : </label>
                 <div class="controls">
-                    <select multiple >
+                    <select ng-model="user.music" multiple >
                         <option>Pop</option>
                         <option>Rock</option>
                         <option>Classical</option>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="controls muted">
                     <label class="checkbox">
-                        <input type="checkbox" > Subscribe to music newsletter
+                        <input ng-model="user.subscribe" type="checkbox" > Subscribe to music newsletter
                     </label>
                 </div>
             </div>    
@@ -77,14 +77,14 @@
     </div>
    
    <!-- TODO Hide this until user has registred --> 
-       <div class=" span4 alert alert-block" >
+       <div ng-show="user.registred" class="span4 alert alert-block" >
         <button type="button" class="close" data-dismiss="alert">&times;</button>
             <p><strong>Thank you! </strong></p>You are now one of us.
     </div>
 </div>
 
 <!-- TODO Hide this until user has registred --> 
-<div class="row">
+<div ng-show="user.registred" class="row">
     <div class="offset1">
        <h2><a href="#/awesome">Now click here to view some awesome stuff!!</a></h2> 
     </div>
