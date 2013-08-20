@@ -2,8 +2,6 @@ angular.module('formLab').controller('SignupCtrl', function ($scope) {
     
     //Declare a function for handling registration
     var handleUserRegistration = function () {
-        
-        $scope.music = ['Pop','Rock','Jazz'];
         //Show confirmation
         $scope.showMessage = true;
         $scope.disabled = true;
