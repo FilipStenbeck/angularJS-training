@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Artist search</title>
+        <link rel="stylesheet" href="css/bootstrap.css">  
+        <link rel="stylesheet" href="css/app.css">  
+        <script src="js/vendor/angular.js"></script>
+  </head>
+  <body ng-app="ArtistSearch">
+      <div ng-controller="artistSearchCtrl">
+          
+          <form  class="form-inline" ng-submit="search()">      
+            <input class="form-control" style="width: 261px;"  type="search" ng-model="query" required/>
+            <input class="btn btn-primary" value="Search" type="submit"/> 
+          </form>
+          
+       <!-- Display the result here -->
+          
+      </div>
+    <script src="js/app.js"></script>   
+  </body>
+</html>
