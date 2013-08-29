@@ -3,6 +3,7 @@
   <head>
     <title>Hello World</title>
     <link rel="stylesheet" href="css/bootstrap.css">  
+     <link rel="stylesheet" href="css/app.css">    
     <script src="js/vendor/angular.js"></script>
   </head>
   <body ng-app  ng-controller="helloController">
@@ -15,7 +16,7 @@
     </div>
     
     <div>
-     Model changed {{counter}} times!!
+     Model changed <span class="{{state}}">  {{counter}} </span> times!!
     </div>  
   <script src="js/app.js"></script>   
   </body>

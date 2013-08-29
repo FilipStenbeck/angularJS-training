@@ -3,6 +3,7 @@
   <head>
     <title>Hello World</title>
     <link rel="stylesheet" href="css/bootstrap.css">  
+    <link rel="stylesheet" href="css/app.css">      
     <script src="js/vendor/angular.js"></script>
   </head>
   <body ng-app  ng-controller="helloController">
@@ -15,10 +16,11 @@
     </div>
     
       <!--
-        Make the counter update everytime the message changes
+        Make the counter update everytime the message changes and 
+        use the .normal and .warning css style (app.css) to make the number first GREEN then RED when the counter reach 10 
     -->
     <div>
-        Model changed {{counter}} times!!
+        Model changed <span> {{counter}} </span> times!!
     </div>  
   <script src="js/app.js"></script>   
   </body>
