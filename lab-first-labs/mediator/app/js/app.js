@@ -28,13 +28,19 @@ app.controller("recieverCtrl", function ($scope, mediator) {
     //Create Reciever Model
     $scope.reciever = {
         message : '',
-        total : 0
+        total : 0,
+        shaker : 'off'
     }
     
     //Declare events handler
     var handleMessage = function(msg) {
         $scope.reciever.total++;
         $scope.reciever.message = msg;
+        if ($scope.reciever.shaker === 'animated tada') {
+            $scope.reciever.shaker = 'animated shake';
+        } else {
+            $scope.reciever.shaker = 'animated tada';
+        }
     };
     
     //Subscribe to Events
