@@ -6,7 +6,7 @@ app.controller("senderOneCtrl", function ($scope, mediator) {
     mediator.installTo($scope);
     
     //Handle button click
-    $scope.send = function () { 
+    $scope.send = function () {
         $scope.publish("oneSending");
     };
 });
@@ -30,10 +30,10 @@ app.controller("recieverCtrl", function ($scope, mediator) {
         message : '',
         total : 0,
         shaker : 'off'
-    }
+    };
     
     //Declare events handler
-    var handleMessage = function(msg) {
+    var handleMessage = function (msg) {
         $scope.reciever.total++;
         $scope.reciever.message = msg;
         if ($scope.reciever.shaker === 'animated tada') {
@@ -44,10 +44,10 @@ app.controller("recieverCtrl", function ($scope, mediator) {
     };
     
     //Subscribe to Events
-    $scope.subscribe("oneSending",  function() {
+    $scope.subscribe("oneSending",  function () {
         handleMessage('Recieved message from sender One');
     });
-    $scope.subscribe("twoSending", function() {
+    $scope.subscribe("twoSending", function () {
         handleMessage('Recieved message from sender Two');
     });
 });
