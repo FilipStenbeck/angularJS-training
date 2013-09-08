@@ -1,0 +1,12 @@
+
+1 JavaScript Arkitektur   (FILIP 45 min)     
+2 AngularJS presentation (BJÖRN 45 min) 
+	paus (10 min)   
+3 kort live demo AngularJS + Yeoman (FILIP 15 min)
+4 Mindre Labbar utan YO/GRUNT/BOWER (60 min)
+	paus( 10 min)
+5 Presentation Yeoman + Angular generators (FILIP/BJÖRN) (30 min)
+6 Mer avancerade Labbar med Yeoman + AngularJS 
+
+--------Backup -------
+(7) Djup presentation grunt.js (FILIP 45 min)
