@@ -1,0 +1,16 @@
+<table class="table table-striped">
+  <thead>
+      <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Time created</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in items">
+      <td>{{item.id}}</td> 
+      <td>{{item.name}}</td> 
+      <td>{{item.time | date:'H:mm:ss' }}</td>
+    </tr>
+  </tbody>
+</table>

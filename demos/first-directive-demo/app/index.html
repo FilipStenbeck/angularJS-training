@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Item table</title>
+      <link rel="stylesheet" href="css/bootstrap.css">  
+      <link rel="stylesheet" href="css/app.css">  
+      <script src="js/vendor/angular.js"></script>
+  </head>
+  <body ng-app="FirstDirective">
+      <div ng-controller="mainCtrl" class="container">
+          <form  class="form-inline" ng-submit="add()">
+              <input class="form-control" style="width: 261px;"  ng-model="item" required/>
+              <input class="btn btn-primary" value="Add" type="submit"/>
+              <button ng-click="clear()"  class="btn btn-danger">Clear</button> 
+          </form>
+          
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                              <th>Id</th>
+                              <th>Name</th>
+                              <th>Time created</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <tr ng-repeat="item in items">
+                          <td>{{item.id}}</td> 
+                          <td>{{item.name}}</td> 
+                          <td>{{item.time | date:'H:mm:ss' }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                <span>First table ends here</span>      
+             </div>
+                
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">  
+                    
+                    <table class="table table-striped">
+                      <thead>
+                          <tr>
+                              <th>Id</th>
+                              <th>Name</th>
+                              <th>Time created</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <tr ng-repeat="item in items">
+                          <td>{{item.id}}</td> 
+                          <td>{{item.name}}</td> 
+                          <td>{{item.time | date:'H:mm:ss' }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <span>Second table ends here</span>      
+            </div>
+          
+        
+          <!--
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+               <item-list tablefooter="First table ends here"></item-list>
+          </div>
+                                             
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+               <item-list tablefooter="Second table ends here"></item-list>
+          </div>
+        </div>
+      -->
+
+      <script src="js/app.js"></script>   
+    </body>
+</html>

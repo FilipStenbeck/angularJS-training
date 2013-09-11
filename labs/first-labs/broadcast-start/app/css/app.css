@@ -1,0 +1,21 @@
+.sender {
+   text-align: center;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+.reciever {
+    margin-top:150px;
+}
+
+.header-text {
+    color : white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.main {
+    margin-top: 70px;
+}
+
+

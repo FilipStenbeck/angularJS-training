@@ -1,0 +1,10 @@
+.warning {
+    font-size: large;
+    color : red;
+    font-weight: bold;
+}
+
+.normal {
+    font-size: large;
+    color : green;
+}

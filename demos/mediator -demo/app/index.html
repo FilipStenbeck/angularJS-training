@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mediator</title>
+      <link rel="stylesheet" href="css/bootstrap.css">  
+      <link rel="stylesheet" href="css/bootstrap-theme.css"> 
+      <link rel="stylesheet" href="css/animate.css"> 
+      <link rel="stylesheet" href="css/app.css">  
+      <script src="js/vendor/angular.js"></script>
+  </head>
+  <body ng-app="mediatorDemo">
+      <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+          <div class="container">
+              <div class="navbar-header">
+                  <span class="header-text">Mediator</span>
+              </div>
+          </div>
+      </header>
+      <div class="container main">
+        
+          <div class="row">
+            <div class="col-lg-8 col-md-7 col-sm-6">
+                <div class="sender" ng-controller="senderOneCtrl">
+                    <form  class="form-inline" ng-submit="send()">      
+                        <input class="btn btn-primary  btn-lg" value="Sender One" type="submit"/> 
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="sender" ng-controller="senderTwoCtrl">
+                    <form  class="form-inline" ng-submit="send()">      
+                        <input class="btn btn-success  btn-lg" value="Sender Two" type="submit"/> 
+                    </form>
+                </div>
+            </div>    
+        </div>
+          
+        <div class="row">
+            <div class="{{reciever.shaker}} reciever jumbotron" ng-controller="recieverCtrl">
+                <h3>Total messages recieved : {{reciever.total}}</h3>
+                <h3>{{reciever.message}}</h3>
+            </div>
+          </div>
+      </div>
+      
+      <!-- Scripts -->
+      <script src="js/mediator.js"></script>
+      <script src="js/app.js"></script>
+    </body>
+</html>
