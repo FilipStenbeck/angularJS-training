@@ -1,12 +1,9 @@
-First labs
 hello world  		(20 min)
-watch        		(15 min)
-broadcast    		(15 min)	
-hello-directive 	(15 min)
+watch        		(20 min)
+broadcast    		(20 min)	
+hello-directive 	(20 min)
 Installera Yeoman 	(20 min)
-artist-search   	(20 min)
+routing   		(20 min)
+artist-search   	(20 min)      
+lab-signup-form 	(20 min)
 
-Music Site Lab      
-lab-signup-form 		 (30 min)
-lab-music-lover-directive (15 min)
-lab-artist-search-service (15 min)
