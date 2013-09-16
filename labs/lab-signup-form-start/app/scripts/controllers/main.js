@@ -1,7 +1,7 @@
-angular.module('formLab').controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-        'HTML5 Boilerplate',
-        'AngularJS',
-        'Karma'
-    ];
+angular.module('formLab').controller('MainCtrl', function ($scope, musicService) {
+    
+    musicService.getTopArtist(function(data) {
+        $scope.artists = data;   
+    });
+   
 });
