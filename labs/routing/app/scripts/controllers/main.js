@@ -7,9 +7,7 @@ angular.module('routingApp')
       'AngularJS',
       'Karma'
     ];
-
-     
-    $scope.options = [ 'Red', 'Blue' ];
+   
     $scope.changeColor = function() {
         if ($scope.color === 'Red') {
         	 $location.url('/red');
