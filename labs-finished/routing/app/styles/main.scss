@@ -1,0 +1,19 @@
+@import "compass_twitter_bootstrap";
+
+.view {
+    padding-left:40px;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
+
+.red {
+    background-color:red;
+}
+
+.blue {
+    background-color:blue;
+}

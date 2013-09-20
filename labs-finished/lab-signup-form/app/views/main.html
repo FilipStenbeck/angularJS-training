@@ -1,0 +1,20 @@
+<div class="well">
+    <h2>We have these great artist for you!</h2>
+    
+    <form  class="form-inline">
+          <fieldset>
+            <label> <strong>Filter on</strong></label>
+            <input autofocus="autofocus" ng-model="searchText" type="text" class="form-fields">
+        </fieldset>
+    </form>
+  
+    <table class="table table-striped">
+        <tr ng-repeat="artist in artists | filter:searchText">
+            <td><a href ="{{artist.url}}" target="top"> <h3>{{artist.name}}</h3> </a></td>
+            <td><img src='{{artist.image[2]["#text"]}}'</img></td>
+        </tr>
+    </table>  
+    
+    
+  <h3>Enjoy Listning!</h3>
+</div>
