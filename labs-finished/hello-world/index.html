@@ -1,12 +1,17 @@
 <!doctype html>
 <html>
   <head>
-    <title>Hello World</title> 
-    <script src="js/vendor/angular.js"></script>
-    <script src="js/app.js"></script>   
+      <title>Hello World</title>
+      <link rel="stylesheet" href="css/bootstrap.css">      
+      <script src="js/vendor/angular.js"></script>
+      <script src="js/app.js"></script>   
   </head>
-  <body ng-app ng-controller="helloController">    
-      <h1> {{message}}</h1>       
-      <input type="text" ng-model="message"/>
+  <body ng-app ng-controller="helloController">
+      <div class="jumbotron" style="margin-top: 30px; margin-left: 30px; margin-right: 30px;">
+            <div class="container">
+                <h1> {{message}}</h1>       
+                <input class="form-control" style="width: 260px;" type="text" ng-model="message"/>
+            </div>
+        </div>
   </body>
 </html>

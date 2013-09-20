@@ -8,20 +8,20 @@
   </head>
   <body ng-app  ng-controller="helloController">
     
-    <div>
-      <h1> {{helloModel.message}}</h1>
-      
-        <input class="form-control" style="width: 260px;" type="text" ng-model="helloModel.message">	
-      
+    <div class="jumbotron" style="margin-top: 30px; margin-left: 30px; margin-right: 30px;">
+        <div class="container">
+            <h1> {{helloModel.message}}</h1>       
+            <input class="form-control" style="width: 260px;" type="text" ng-model="helloModel.message"/>
+        
+            <!--
+            Make the counter update everytime the message changes and 
+            use the .normal and .warning css style (app.css) to make the number first GREEN then RED when the counter reach 10 
+            -->
+        
+            Model changed <span> {{counter}} </span> times!!
+        
+        </div>
     </div>
-    
-      <!--
-        Make the counter update everytime the message changes and 
-        use the .normal and .warning css style (app.css) to make the number first GREEN then RED when the counter reach 10 
-    -->
-    <div>
-        Model changed <span> {{counter}} </span> times!!
-    </div>  
-  <script src="js/app.js"></script>   
+    <script src="js/app.js"></script>   
   </body>
 </html>

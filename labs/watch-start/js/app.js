@@ -6,4 +6,6 @@ function helloController($scope) {
     
     $scope.counter = 0;
     
+    //Hint use  $scope.$watch to listen for changes
+    
 }
