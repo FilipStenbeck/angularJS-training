@@ -11,16 +11,19 @@ app.handleMessage = function ($scope, msg) {
     }
 };
 
-//The sender controller which also must include recieverCtrl as child scope
-app.controller("senderCtrl", function ($scope) {
 
- 
+//
+//TIP use $scope.$broadcast and $scope.$on
+//
+
+app.controller("senderCtrl", function ($scope) {
+    
+  //TODO Make two functions to handle both button clicks each button should sent a specifik event
     
 });
     
 
-app.controller("recieverCtrl", function ($scope) {
-    
+app.controller("recieverCtrl", function ($scope) {     
     //The Reciever Model
     $scope.reciever = {
         message : '',
@@ -28,7 +31,7 @@ app.controller("recieverCtrl", function ($scope) {
         shaker : 'off'
     };
 
-    
+    //TODO listen for the messages and use the handleMessage function to handle messages
     
 });
 
