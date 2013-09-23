@@ -1,5 +1,6 @@
 'use strict';
 
+
 angular.module('routingApp')
   .directive('colorChooser', function ($location) {
     var colors =  [ 'Red', 'Blue' ];
