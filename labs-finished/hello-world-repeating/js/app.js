@@ -1,3 +1,3 @@
 function helloController($scope) {
-    $scope.message = 'Hello World!!'
+    //$scope.message = 'Hello World!!'
 }

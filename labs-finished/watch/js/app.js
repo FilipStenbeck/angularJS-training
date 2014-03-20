@@ -1,14 +1,18 @@
 function helloController($scope) {
   
     $scope.helloModel = {
-        message : 'Hello World!!'
-    }
-    $scope.state = "normal";
-    $scope.counter = 0;
+        message : 'Hello World!!',
+        state : 'normal',
+        counter : 0
+    };
+
+    //$scope.state = "normal";
+    //$scope.helloModel.counter = 0;
+    
     $scope.$watch("helloModel.message", function(newValue, oldValue) {
-        if ($scope.counter++ > 8) {
-            $scope.state = "warning";  
-        };
+        if ($scope.helloModel.counter++ > 8) {
+            $scope.helloModel.state = "warning";  
+        }
     });
  
 }

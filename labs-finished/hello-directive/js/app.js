@@ -8,10 +8,10 @@ app.directive("helloDirective", function () {
          
             if (attributes.format === 'big') {
                 big = document.createElement("h1");
-                big.textContent =  attributes.messsage;;
+                big.textContent =  attributes.messsage;
                 element[0].appendChild(big);
             } else {
-                element[0].textContent =  attributes.messsage;;
+                element[0].textContent =  attributes.messsage;
             }
 			
 			 element[0].onclick = function (event) {
